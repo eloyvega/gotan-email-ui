@@ -1,13 +1,12 @@
 <template name="inbox">
+    <a href="{{pathFor 'access'}}">Back</a>
+    <h2>Inbox of {{username}}</h2>
     <ul>
         {{#each mails}}
-            {{> mail}}
+            <li>
+                From: {{sender}}
+                Content: {{email.body.content}}
+            </li>
         {{/each}}
     </ul>
-
-
-</template>
-
-<template name="mail">
-    <li>{{recipient}}</li>
 </template>

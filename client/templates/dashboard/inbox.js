@@ -1,5 +1,12 @@
 Template.inbox.helpers({
     mails: function () {
-        return Inbox.find({});
+        console.log(this._id);
+        return Inbox.find({recipient:this._id});
+    },
+    domain: function(){
+        return domain_name;
+    },
+    username: function(){
+        return this._id;
     }
 });
