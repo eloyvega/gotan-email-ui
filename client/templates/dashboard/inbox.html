@@ -1,0 +1,13 @@
+<template name="inbox">
+    <ul>
+        {{#each mails}}
+            {{> mail}}
+        {{/each}}
+    </ul>
+
+
+</template>
+
+<template name="mail">
+    <li>{{recipient}}</li>
+</template>
