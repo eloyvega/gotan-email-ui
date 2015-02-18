@@ -11,7 +11,6 @@ body{
     margin: 100px auto;
     width: 500px;
     text-align: center;
-
 }
 .access h1{
     font-size: 60px;
@@ -28,11 +27,4 @@ body{
 }
 .access p{
     font-size: 18px;
-}
-.access input[type="submit"]{
-    background: #4bc236;
-    color: white;
-    border: 50px;
-    padding: 15px 100px;
-    font-size: 15px;
 }
