@@ -1,14 +1,11 @@
 <template name="inbox">
     {{> topbar}}
     <div class="inbox">
-    <h2>Inbox of {{_id}}</h2>
-    <ul>
-        {{#each mails}}
-            <li>
-                From: {{sender}}
-                Content: {{email.body.content}}
-            </li>
-        {{/each}}
-    </ul>
+        <h2>{{_id}}</h2>
+        <div class="mail-list">
+            {{#each mails}}
+                {{> mail}}
+            {{/each}}
+        </div>
     </div>
 </template>

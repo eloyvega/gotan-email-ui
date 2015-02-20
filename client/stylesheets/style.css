@@ -61,3 +61,20 @@ body{
 .inbox{
     text-align: center;
 }
+.inbox h2{
+    color: #99CC33;
+}
+.mail{
+    width: 800px;
+    background: #ffffff;
+    margin: 2px auto;
+    border: 2px solid #FF6600;
+    padding: 15px;
+    color: black;
+    text-align: left;
+}
+.shown{
+    margin: 15px 0;
+    padding: 5px;
+    background: rgba(51, 153, 204, .2);
+}
