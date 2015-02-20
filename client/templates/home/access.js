@@ -3,11 +3,9 @@ Template.access.events({
         event.preventDefault();
 
         var text = event.target.text.value;
-        var username = text+"@"+domain_name;
-        User.upsert(
-            {_id:username},
-            {$set:{last_access: new Date()}}
-        );
+        if(!text){
+            text = "lol";
+        }
         event.target.text.value = "";
         Router.go('inbox', {_id: text});
     }

@@ -1,5 +1,6 @@
 <template name="inbox">
-    <a href="{{pathFor 'access'}}">Back</a>
+    {{> topbar}}
+    <div class="inbox">
     <h2>Inbox of {{_id}}</h2>
     <ul>
         {{#each mails}}
@@ -9,4 +10,5 @@
             </li>
         {{/each}}
     </ul>
+    </div>
 </template>
