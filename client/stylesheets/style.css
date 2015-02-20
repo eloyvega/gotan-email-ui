@@ -1,5 +1,13 @@
+/*
+    Colors:
+    #FF6600   Rounge
+    #FF9900   Vitamin C
+    #3399CC   Plumbague
+    #99CC33   173 Pasture
+    #006600   Green Light Go!
+*/
 body{
-    background: #359fd4;
+    background: #3399CC;
     color: #ffffff;
     border:0;
     padding: 0;
@@ -20,6 +28,7 @@ body{
 .access h2{
     font-size: 30px;
     font-weight: 100;
+    color: #99CC33;
 }
 .access input{
     border: 0;
